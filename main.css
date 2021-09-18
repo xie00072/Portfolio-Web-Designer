@@ -1,0 +1,607 @@
+/* ------------------- CSS  RESET----------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* --------------------------------------- CUSTOM CODE --------------------------------------- */
+
+
+/* ----------- General ----------- */
+
+body {
+    background: #293241;
+    color: white;
+    font-family: Yu Gothic, Extrabold, sans-serif;
+    line-height: 1.5rem;
+    margin: 0 auto;
+
+}
+
+.social-media {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/* ----------- font -----------*/
+
+.external-font {
+    font-family: 'Amatic SC', cursive;
+}
+
+
+/* ----------- background ----------- */
+
+.bc {
+    height: 100%;
+}
+
+.bg {
+    background: linear-gradient(135deg, #DF6C8F, #405584);
+}
+
+/* ----------- navigation ----------- */
+.navigation-desktop,
+.navigation-tablet {
+    display: none;
+}
+
+.navigation-mobile a {
+    text-decoration: none;
+}
+
+
+/* -----------------page transition ------------------ */
+
+body {
+    animation: transition 1s;
+}
+
+@keyframes transition {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 100%;
+        transform: rotateX(0);
+    }
+}
+
+
+/* -----------------------------------
+               Home Page
+--------------------------------------*/
+
+/* -------- Homepage Buttons --------*/
+/* rotate button text */
+.rotate-about{
+    transform: rotate(-14deg);
+}
+.rotate-projects {
+    transform: rotate(15deg);
+}
+.rotate-fun {
+    transform: rotate(20deg);
+}
+.rotate-contact {
+    transform: rotate(-19deg);
+}
+
+/* about button */
+.btn-circle1 {
+
+    display: inline-block;
+    background-color: #C54860;
+    width: 20em;
+    height: 20em;
+
+
+    text-decoration: none;
+
+    border-radius: 50%;
+    box-shadow: 10px 15px 50px 10px #8f2b38;
+
+
+}
+
+#about {
+    font-size: 2rem;
+    font-weight: 300;
+   
+}
+
+/* projects button */
+
+.btn-circle2 {
+
+    display: inline-block;
+    background-color: #695175;
+    width: 18em;
+    height: 18em;
+
+
+    text-decoration: none;
+
+    border-radius: 50%;
+    box-shadow: 10px 15px 50px 10px #573a64;
+
+
+}
+
+#projects {
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+
+/* fun button */
+
+.btn-circle3 {
+
+    display: inline-block;
+    background-color: #584D7E;
+    width: 15em;
+    height: 15em;
+
+
+    text-decoration: none;
+
+    border-radius: 50%;
+    box-shadow: 10px 15px 50px 10px #43375e;
+
+
+}
+
+#fun {
+    font-size: 2rem;
+    font-weight: 300;
+    
+}
+
+/* contact button */
+
+.btn-circle4 {
+
+    display: inline-block;
+    background-color: #784D5D;
+    width: 18em;
+    height: 18em;
+
+
+    text-decoration: none;
+
+    border-radius: 50%;
+    box-shadow: 10px 15px 50px 8px #372d46;
+
+
+}
+
+#contact {
+    font-size: 2rem;
+    font-weight: 300;
+   
+}
+
+
+/* circular buttons bouncing */
+
+@keyframes bounce1 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes bounce2 {
+    0% {
+        transform: translate(0px, -10px);
+    }
+
+    50% {
+        transform: translate(-15px, 40px);
+    }
+
+    100% {
+        transform: translate(0px, -10px);
+    }
+}
+
+@keyframes bounce3 {
+    0% {
+        transform: translate(0px, -20px);
+    }
+
+    50% {
+        transform: translate(-10px, -60px);
+    }
+
+    100% {
+        transform: translate(0px, -20px);
+    }
+}
+
+#c1 {
+    animation: bounce1 4s 0s ease-in-out infinite;
+}
+
+#c2 {
+    animation: bounce2 5s 0s ease-in-out infinite;
+}
+
+#c3 {
+    animation: bounce1 6s 1s ease-in-out infinite;
+}
+
+#c4 {
+    animation: bounce3 6s -1s ease-in-out infinite;
+}
+
+
+/* -----------------------------------
+               About Page
+--------------------------------------*/
+
+
+
+.introduction-portrait {
+    width: 70%;
+
+    position: absolute;
+    top: 380px;
+    right: 0;
+
+    z-index: -1;
+}
+
+.introduction-content {
+    margin-top: 180px;
+    padding: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------
+            Projects Page
+--------------------------------------*/
+
+#project-image {
+    border-radius: 50px;
+    opacity: 50%;
+    transition: all 1s ease-in-out ;
+   
+}
+
+#project-image:hover {
+    opacity: 100%;
+    transition: all 0.5s ease-in-out 0.1s;
+}
+
+
+
+
+
+
+
+/* -----------------------------------
+               Fun Page
+--------------------------------------*/
+
+
+/* gallery */
+
+.gallery {
+    display: flex;
+}
+
+.column {
+    display: block;
+    margin-right: 0.5vw;
+    width: 100%;
+}
+
+.item {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0.5vw;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    border-radius: 1%;
+}
+
+.img {
+    display: block;
+    position: relative;
+    transition: 0.2s;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* -----------------------------------
+               Contact Page
+--------------------------------------*/
+
+form {
+    margin-bottom: 200px;
+}
+
+
+
+
+/* -----------------------------------------------------------
+                         Tablet Style
+--------------------------------------------------------------*/
+
+@media screen and (min-width: 415px) {
+
+    .navigation-mobile {
+        display: none;
+    }
+
+    .navigation-tablet {
+        display: block;
+
+    }
+
+    .navigation-tablet a {
+        text-decoration: none;
+    }
+
+    #social-media {
+        margin-right: 3em;
+        display: flex;
+        justify-content: flex-end;
+        gap: 2em;
+    }
+
+
+    /* --------- about page --------- */
+    .introduction-portrait {
+        width: 40%;
+
+        position: absolute;
+        top: 200px;
+        right: 0;
+
+        z-index: -1;
+
+    }
+
+
+
+    .introduction-content {
+        margin-top: 200px;
+        padding: 3em;
+    }
+
+}
+
+
+ /* ------------------------typing animation-------------------- */
+@media screen and (min-width: 725px) {
+    
+   
+.introduction-content h2 {
+    overflow: hidden;
+    display: inline-block;
+}
+.typing {
+    position: relative;
+    
+}
+.typing::after {
+    content: "|";
+    position: absolute;
+    right: 0; 
+    width: 100%;
+    color: #ccc;
+    background: #293241;
+    animation: typing 5s steps(30) 1s infinite alternate,
+    blink 1s infinite;
+   
+}
+
+@keyframes blink {
+    
+    50% {color: transparent;}
+   
+}
+
+@keyframes typing {
+    from { width: 100%;}
+    90%, to {width: 0%;}
+}
+
+
+}
+
+
+
+
+/* -----------------------------------------------------------
+                         Desktop Style
+--------------------------------------------------------------*/
+
+    @media screen and (min-width: 1200px) {
+        .navigation-mobile {
+            display: none;
+        }
+
+        .navigation-tablet {
+            display: none;
+        }
+
+        .navigation-desktop {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .navigation-desktop a {
+            text-decoration: none;
+        }
+
+        /* --------- about page --------- */
+
+        
+
+        .introduction-content {
+            width: 60%;
+            margin: 10em;
+        }
+
+    
+    }
